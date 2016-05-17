@@ -1,0 +1,14 @@
+.tweet {
+  overflow: hidden;
+  background: white;
+  max-width: 600px;
+  width: 100%; }
+  .tweet .content {
+    display: flex; }
+    .tweet .content .profile img {
+      border-radius: 15px;
+      height: 50px;
+      width: auto; }
+  .tweet .media {
+    max-height: 400px;
+    overflow: hidden; }

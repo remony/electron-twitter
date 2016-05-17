@@ -1,0 +1,22 @@
+<div class='timagebase'>
+	<div class="videoview" ng-if="images[0].type === 'animated_gif'">
+		<video src="{{images[0].video_info.variants[0].url | trustUrl}}"
+		poster="{{images[0].media_url}}" autoplay loop>
+		<source src="images[0].video_info.variants[0].url" type="video/mp4">
+
+		</video>
+	</div>
+	<div class="imageview" ng-if="images[0].type === 'photo'">
+		<div class="multiimages" ng-if="images.length > 1">
+			<div class="image" ng-repeat="image in images">
+				<img ng-src="{{image.media_url}}"/>
+			</div>
+		</div>
+		<div ng-if="images.length === 1">
+			<div class="image">
+				<img ng-src="{{images[0].media_url}}"/>
+				
+			</div>
+		</div>
+	</div>
+</div>

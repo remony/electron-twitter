@@ -1,0 +1,11 @@
+<div class="usermodalbase" ng-if="open" ng-click="close()">
+	<div class="modal" ng-style="{'background': 
+	user.profile_background_color}">
+		<div class="header">
+  			<img ng-src="{{user.profile_image_url_https}}"/>
+		</div>
+  		<div class="content">
+  			<h2>@{{user.screen_name}}</h2>
+  		</div>
+	</div>
+</div>

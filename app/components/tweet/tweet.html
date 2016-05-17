@@ -1,0 +1,24 @@
+<div class="tweet">
+    <div class="content">
+        <div class="profile">
+            <img ng-src="{{tweet.user.profile_image_url}}"/>
+        </div>
+        <div class="text">
+            <div class="username">
+                @{{tweet.user.screen_name}}
+            </div>
+            <div class="tweet-text">
+                {{tweet.text}}
+            </div>
+        </div>
+    </div>
+
+    <div class="media">
+        <div class="images">
+            <img ng-src="{{tweet.extended_entities.media[0].media_url}}"/>
+        </div>
+    </div>
+
+</div>
+
+

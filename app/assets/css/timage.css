@@ -1,0 +1,38 @@
+.timagebase {
+  position: relative;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  overflow: hidden;
+  height: 400px;
+  width: 100%;
+  background: #fafafa; }
+  .timagebase .videoview {
+    width: 100%;
+    overflow: hidden; }
+    .timagebase .videoview video {
+      width: 100%;
+      height: 374px; }
+  .timagebase .imageview {
+    overflow: hidden; }
+    .timagebase .imageview .singleimage img {
+      width: 100%;
+      height: auto; }
+    .timagebase .imageview .multiimages {
+      min-height: 374px;
+      position: absolute;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      overflow-y: hidden;
+      overflow-x: scroll; }
+      .timagebase .imageview .multiimages .image {
+        positon: absolute;
+        top: 0;
+        flex: 1 1 auto;
+        height: 374px; }
+      .timagebase .imageview .multiimages img {
+        width: auto;
+        padding-left: 2px;
+        padding-right: 2px;
+        height: 100%; }

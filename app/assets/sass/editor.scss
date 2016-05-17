@@ -1,0 +1,29 @@
+@import 'base';
+
+.editorbase {
+	background: white;
+	height: 100%;
+	width: 100%;
+	.editorform {
+		display: flex;
+		textarea {
+			flex-grow: 1;
+			border: none;
+			min-height: 100px;
+		}
+
+		.button {
+			width: 100px;
+			border: none;
+			background: #3498db;
+			margin: 0;
+			padding: 0;
+			color: white;
+		}
+
+		.button:hover {
+			background: #2980b9;
+
+		}
+	}
+}

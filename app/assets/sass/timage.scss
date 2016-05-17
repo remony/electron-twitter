@@ -1,0 +1,56 @@
+@import 'base';
+
+.timagebase {
+	position: relative;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	overflow: hidden;
+	height: 400px;
+	width: 100%;
+	background: #fafafa;
+	.videoview {
+		width: 100%;
+		overflow: hidden;
+		video {
+			width: 100%;
+			height: 374px;
+		}
+	}
+
+	.imageview {
+		overflow: hidden;
+		.singleimage {
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		.multiimages {
+			min-height: 374px;
+			position: absolute;
+
+			width: 100%;
+
+			display: flex;
+			flex-direction: row;
+ 			align-items: flex-end;
+ 			overflow-y: hidden;
+			overflow-x: scroll;
+			
+			.image {
+				positon: absolute;
+				top: 0;
+				flex: 1 1 auto;
+				height: 374px;			
+			}
+			img {
+				width: auto;
+				padding-left: 2px;
+				padding-right: 2px;
+				height: 100%;
+			}
+			
+		}
+	}
+}

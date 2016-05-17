@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="menu">
+        menu
+    </div>
+    <div class="content">
+        <div class="module">
+            <editor>
+
+            </editor>
+            <div class="tweets" ng-repeat="tweet in userStream track by $index" >
+                <div class="tweet">
+                    <div class="content">
+                        <div class="profile" ng-click="showProfile(tweet.user)">
+                            <img ng-src="{{tweet.user.profile_image_url}}"/>
+                        </div>
+                        <div class="text">
+                            <div class="username">
+                                @{{tweet.user.screen_name}}
+                            </div>
+                            <div class="tweet-text">
+                                {{tweet.text}}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="media" ng-show="tweet.extended_entities.media">
+                        <timage data={{tweet.extended_entities.media}}></timage>
+                        <!-- <div class="images">
+                            <img ng-src="{{tweet.extended_entities.media[0].media_url}}"/>
+                        </div> -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<usermodal data={{userModalData}}></usermodal>

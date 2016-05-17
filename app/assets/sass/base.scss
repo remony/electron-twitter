@@ -1,0 +1,39 @@
+// Mixins
+
+@mixin center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@mixin center-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@mixin center-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@mixin bottom-center {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+@mixin bottom-right {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+
+@mixin bottom-left {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}

@@ -1,0 +1,19 @@
+.editorbase {
+  background: white;
+  height: 100%;
+  width: 100%; }
+  .editorbase .editorform {
+    display: flex; }
+    .editorbase .editorform textarea {
+      flex-grow: 1;
+      border: none;
+      min-height: 100px; }
+    .editorbase .editorform .button {
+      width: 100px;
+      border: none;
+      background: #3498db;
+      margin: 0;
+      padding: 0;
+      color: white; }
+    .editorbase .editorform .button:hover {
+      background: #2980b9; }
