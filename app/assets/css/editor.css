@@ -10,6 +10,7 @@
       min-height: 100px; }
     .editorbase .editorform .button {
       width: 100px;
+      min-height: 110px;
       border: none;
       background: #3498db;
       margin: 0;
@@ -17,3 +18,9 @@
       color: white; }
     .editorbase .editorform .button:hover {
       background: #2980b9; }
+
+.editor.float {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000; }

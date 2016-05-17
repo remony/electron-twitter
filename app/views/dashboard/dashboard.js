@@ -15,6 +15,8 @@ angular.module('app.dashboard', ['ngRoute'])
         var ipcRenderer = require('electron').ipcRenderer;
         $scope.title = 'welcome';
         $scope.userStream = [];
+        $scope.showEditor = true;
+        $scope.editorClass = '';
 
 
         //    Check if logged in
@@ -67,6 +69,24 @@ angular.module('app.dashboard', ['ngRoute'])
 
             })
         }
+var editorToggle =false;
+
+        Mousetrap.bind('ctrl+t', function(e) {
+            console.log('tweet time')
+            $timeout(function() {
+                editorToggle = !editorToggle;
+                if (editorToggle) {
+                    $scope.editorClass = 'editor float';
+                } else {
+                    $scope.editorClass = '';
+                }
+
+            })
+            if ($scope.userTweet !== '') {
+
+                // scope.tweet(scope.userTweet);
+            }
+        });
 
     }
 ]);

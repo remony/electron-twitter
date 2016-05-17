@@ -1,39 +1,44 @@
 <div class="container">
     <div class="menu">
-        menu
+        <div class="button sidebar" ng-click="showEditor = !showEditor">
+            T
+        </div>
     </div>
     <div class="content">
         <div class="module">
-            <editor>
-
+            <editor ng-class="editorClass" ng-if="showEditor">
             </editor>
             <div class="tweets" ng-repeat="tweet in userStream track by $index" >
                 <div class="tweet">
                     <div class="content">
                         <div class="profile" ng-click="showProfile(tweet.user)">
-                            <img ng-src="{{tweet.user.profile_image_url}}"/>
+                            <div class="image">
+                                <img ng-src="{{tweet.user.profile_image_url}}"/>
+                            </div>
                         </div>
                         <div class="text">
-                            <div class="username">
-                                @{{tweet.user.screen_name}}
+                            <div class="names">
+                                <div class="username">
+                                    @{{tweet.user.screen_name}}
+                                </div>
+                                <div class="name">
+                                    {{tweet.user.name}}
+                                </div>
                             </div>
-                            <div class="tweet-text">
-                                {{tweet.text}}
-                            </div>
+                            
+                           
                         </div>
                     </div>
-
+                     <div class="tweet-text">
+                                {{tweet.text}}
+                            </div>
                     <div class="media" ng-show="tweet.extended_entities.media">
                         <timage data={{tweet.extended_entities.media}}></timage>
-                        <!-- <div class="images">
-                            <img ng-src="{{tweet.extended_entities.media[0].media_url}}"/>
-                        </div> -->
+                        
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 <usermodal data={{userModalData}}></usermodal>

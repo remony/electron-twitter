@@ -3,6 +3,9 @@ html, body {
   height: 100%;
   background: #bdc3c7; }
 
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important; }
+
 img {
   width: 100%;
   height: auto; }
@@ -18,6 +21,21 @@ img {
     flex-grow: 1;
     width: 100%;
     display: flex; }
+
+.button {
+  background: #3498db;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.button:hover {
+  background: #2980b9; }
+
+.button.sidebar {
+  height: 50px; }
 
 ::-webkit-scrollbar {
   -webkit-appearance: none;

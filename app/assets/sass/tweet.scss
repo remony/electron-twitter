@@ -3,21 +3,46 @@
 .tweet {
   overflow: hidden;
   background: white;
+  margin-top: 5px;
+  margin-bottom: 2.5px;
 
   // max-width: 100vh;
   max-width: 600px;
   width: 100%;
   .content {
     display: flex;
+    padding: 5px;
+    .profile {
+      @include center-center;
+    }
     .profile img {
       border-radius: 15px;
       height: 50px;
       width: auto;
+    }
+    .text {
+      padding: 10px;
+      .names {
+        display: flex;
+        .name {
+          color: #e3e3e3 * 0.8;
+          margin-left: 10px;
+        }
+      }
+      .username {
+        color: #2980b9;
+        padding-bottom: 10px;
+      }
     }
   }
 
   .media {
     max-height: 400px;
     overflow: hidden;
+  }
+
+  .tweet-text {
+    min-height: 30px;
+    padding: 10px;
   }
 }

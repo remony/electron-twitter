@@ -39,9 +39,18 @@ angular.module('app.component.editor', [])
 
                     }
                 }
+
+                
+
+
                 Mousetrap.bind('ctrl+enter', function(e) {
                     // console.log(scope.userTweet)
+
+                
+                    
+                    if (scope.userTweet !== '') {
                     scope.tweet(scope.userTweet);
+                    }
                 });
 
 

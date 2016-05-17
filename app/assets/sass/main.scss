@@ -6,6 +6,10 @@ html, body {
   background: #bdc3c7;
 }
 
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -26,6 +30,22 @@ img {
   }
 }
 
+
+.button {
+  background: #3498db;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  @include center-center;
+}
+
+.button:hover {
+  background: #2980b9;
+}
+
+.button.sidebar {
+  height: 50px;
+}
 
 
 ::-webkit-scrollbar {
